@@ -1,0 +1,77 @@
+# ----------------------------------------------------------------------
+# Standard Python Ignore (often starting with the official Python template)
+# ----------------------------------------------------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Setup files
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Virtual environment
+# Name of the environment you are using (e.g., 'learn-env' from your traceback)
+venv/
+env/
+.env
+learn-env/
+
+# Package Data
+.mypy_cache/
+.pytest_cache/
+.vscode/
+
+# ----------------------------------------------------------------------
+# Data Science & ML Specific
+# ----------------------------------------------------------------------
+
+# Data Files (Crucial for not committing large files or sensitive data)
+# You should generally NOT commit the raw data unless it's tiny.
+data/
+input/
+output/
+temp/
+*.csv
+*.tsv
+*.xlsx
+*.zip  # Assuming your 'zippedData/achive.zip' is large, ignore all zips
+
+# Specific to your project:
+zippedData/
+
+# Model Checkpoints and Artifacts
+# These files can be large, and Git is bad at handling large binary files.
+# Store these in cloud storage (like S3) instead of Git.
+*.pkl
+*.joblib
+*.h5
+*.hd5
+*.pt
+model_output/
+artifacts/
+models/
+
+# Logs
+*.log
+
+# ----------------------------------------------------------------------
+# Jupyter Notebook / IDE Specific
+# ----------------------------------------------------------------------
+
+# Jupyter Notebook Checkpoints (these can clutter your repo)
+.ipynb_checkpoints/
+
+# Jupyter / IPython
+profile_default/
+ipython_config.py
+
+# Spyder/IDE/OS Files
+.spyderproject
+.idea/
+.DS_Store
+Thumbs.db
